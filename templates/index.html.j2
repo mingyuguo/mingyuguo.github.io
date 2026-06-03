@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mingyu Guo</title>
+  <link rel="stylesheet" href="static/site.css">
+</head>
+
+<body>
+  <div class="site-shell">
+    <header class="profile-header">
+      <div class="profile-photo-wrap">
+        <img class="profile-photo" src="static/mingyu.jpg" alt="Mingyu Guo" />
+      </div>
+      <div class="profile-copy">
+        <p class="eyebrow">Senior Lecturer · Adelaide University</p>
+        <h1>Mingyu Guo</h1>
+        <p class="lead">Intelligent systems for strategic decision-making in complex, multiagent environments.</p>
+        <div class="contact-list" aria-label="Contact information">
+          <span>mingyu.guo at adelaide dot edu dot au</span>
+          <span>4.19 Ingkarni Wardli Building</span>
+          <span>Adelaide University, Australia</span>
+        </div>
+        <nav class="profile-links" aria-label="Profile links">
+          <a href="https://dblp.org/pid/62/5599-1.html">DBLP</a>
+          <a href="https://scholar.google.com/citations?user=bxEKdzkAAAAJ&hl=en">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/mingyu-guo-97236b1b/">LinkedIn</a>
+        </nav>
+      </div>
+    </header>
+
+    <nav class="page-nav" aria-label="Page sections">
+      <a href="#about">About</a>
+      <a href="#opportunities">Opportunities</a>
+      <a href="#publications">Publications</a>
+      <a href="#students">Students</a>
+      <a href="#grants">Grants</a>
+      <a href="#talks">Talks</a>
+    </nav>
+
+    <main class="layout">
+      <div class="main-column">
+        <section id="about" class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Profile</p>
+            <h2>About Me</h2>
+          </div>
+          <div class="prose">
+            <p>I am a <strong>Senior Lecturer</strong> in the School of Computer Science and Information Technology, <em>Adelaide University</em>.</p>
+            <p>My research focuses on building <strong>intelligent systems</strong> for <strong>strategic decision-making</strong> in <strong>complex, multiagent environments</strong>. For example, I leverage <strong>algorithmic game theory</strong> and <strong>optimisation</strong> to design coordination strategies for massive-scale autonomous systems, such as sovereign drone swarms. In cybersecurity, my work combines <strong>algorithmic graph-pattern exploration</strong> with <em>machine learning</em> to identify high-risk attack paths and strategically deploy defences within enterprise networks.</p>
+            <p>My ongoing research investigates the role of <strong>Large Language Models</strong> (LLMs) as the backbone for <strong>strategic reasoning</strong> and <strong>automated decision-making</strong>. This includes developing agentic workflows that optimise reasoning quality under strict cost constraints and utilising LLMs as automated heuristic designers for complex optimisation applications. I also study game-theoretical applications to GenAI-era economic models, including automated negotiation, advertisement integration, and market-based LLM provisioning.</p>
+            <p>Prior to joining the school, I was a Lecturer at the <em>University of Liverpool</em>, UK. I received my Ph.D. degree in <em>Computer Science</em> from <em>Duke University</em>, USA. My Ph.D. Dissertation was recognised as the runner-up for the <em>Victor Lessor Distinguished Dissertation Award</em>. I hold a M.S. degree in <em>Applied Mathematics</em> from <em>University of Florida</em>, USA and a B.S. degree in <em>Mathematics (Chu Kochen Honour College)</em> from <em>Zhejiang University</em>, China.</p>
+          </div>
+          <div class="stat-grid" aria-label="Profile highlights">
+            <div class="stat">
+              <span class="stat-value">90+</span>
+              <span class="stat-label">Research publications</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">50+</span>
+              <span class="stat-label">CORE A*/A publications</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">1.5M+</span>
+              <span class="stat-label">Research income</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">10+</span>
+              <span class="stat-label">HDR completions</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section mobile-news">
+          <div class="section-heading">
+            <p class="section-kicker">Updates</p>
+            <h2>News</h2>
+          </div>
+          <ol class="news-list">
+            {% for item in news %}
+            <li>
+              <time>{{ item.date }}</time>
+              <span>{{ item.text_html | safe }}</span>
+            </li>
+            {% endfor %}
+          </ol>
+        </section>
+
+        <section id="opportunities" class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Prospective Students</p>
+            <h2>PhD/MPhil Opportunities</h2>
+          </div>
+          <div class="prose">
+            <p>I am actively recruiting PhD/MPhil students. Currently, I do not have funding available for international PhD/MPhil students, but you are welcome to contact me regarding these options:</p>
+            <ul>
+              <li><a href="https://adelaideuni.edu.au/research/research-degrees/research-scholarships/">Adelaide University research scholarships for PhD and MPhil students.</a></li>
+              <li>Self-financed PhD/MPhil. Please note that this option requires you to pay tuition fees.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="au-students" class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Projects</p>
+            <h2>Project Opportunities for AU Students</h2>
+          </div>
+          <div class="prose">
+            <p>You are welcome to contact me if you are a current Adelaide University student and are interested in exploring academic research. My Honours student also had the chance to collaborate with researchers at CMU, Oxford, and Harvard.</p>
+            <p>We can aim for publishable research, but practical projects are equally welcome. Industry-oriented projects, startup ideas, prototypes, and applied systems can all provide valuable research experience and meaningful outcomes.</p>
+          </div>
+        </section>
+
+        <section id="publications" class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Research Output</p>
+            <h2>Full Publication List</h2>
+          </div>
+          <ol class="publication-list">
+            {% for publication in publications %}
+            <li class="publication-item">
+              <div class="publication-main">
+                <p class="publication-title">
+                  {% if publication.link %}<a href="{{ publication.link }}">{% endif %}{{ publication.title }}{% if publication.link %}</a>{% endif %}
+                </p>
+                <p class="publication-authors">{{ publication.authors_html | safe }}</p>
+                <p class="publication-meta"><em>{{ publication.venue }}</em>{% if publication.volume_number_pages %}, {{ publication.volume_number_pages }}{% endif %}, {{ publication.year }}.</p>
+              </div>
+              {% if publication.ranking %}
+              <span class="tag">{{ publication.ranking }}</span>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ol>
+        </section>
+
+        <section id="students" class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Mentoring</p>
+            <h2>Higher Degree by Research Students</h2>
+          </div>
+          <div class="student-groups">
+            <div>
+              <h3>Active</h3>
+              <ol class="student-list">
+                {% for student in students if not student.finish_year %}
+                <li>
+                  <strong>{{ student.name }}</strong>
+                  <span>{{ student.program }}, <em>{{ student.role }}</em>, started {{ student.entry_year }}</span>
+                  <span>with {{ student.other_supervisors | join(" and ") }}</span>
+                  <span class="topic">{{ student.topic }}</span>
+                  {% if student.note_html %}<span>{{ student.note_html | safe }}</span>{% endif %}
+                </li>
+                {% endfor %}
+              </ol>
+            </div>
+            <div>
+              <h3>Completed</h3>
+              <ol class="student-list">
+                {% for student in students if student.finish_year %}
+                <li>
+                  <strong>{{ student.name }}</strong>
+                  <span>{{ student.program }}, <em>{{ student.role }}</em>, {{ student.entry_year }}-{{ student.finish_year }}</span>
+                  <span>with {{ student.other_supervisors | join(" and ") }}</span>
+                  <span class="topic">{{ student.topic }}</span>
+                  {% if student.note_html %}<span>{{ student.note_html | safe }}</span>{% endif %}
+                </li>
+                {% endfor %}
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section id="grants" class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Funding</p>
+            <h2>Research Grants</h2>
+          </div>
+          <ul class="grant-list">
+            {% for grant in grants %}
+            <li>
+              <strong>{{ grant.title }}</strong>
+              <span>{{ grant.role }} · {{ grant.funder }} · {{ grant.amount }} · {{ grant.duration }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Service</p>
+            <h2>Professional Services</h2>
+          </div>
+          <ul class="service-list">
+            {% for service in services %}
+            <li><strong>{{ service.role }}</strong>{% if service.detail %}<span>{{ service.detail }}</span>{% endif %}</li>
+            {% endfor %}
+          </ul>
+        </section>
+
+        <section id="talks" class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Invited Talks</p>
+            <h2>Other Research Presentations</h2>
+          </div>
+          <ol class="talk-list">
+            {% for presentation in presentations %}
+            <li>
+              <strong>{{ presentation.title }}</strong>
+              <span>{% for event in presentation.events %}{{ event | safe }}{% if not loop.last %}<br>{% endif %}{% endfor %}</span>
+            </li>
+            {% endfor %}
+          </ol>
+        </section>
+      </div>
+
+      <aside class="side-column">
+        <section class="side-panel desktop-news">
+          <div class="section-heading compact">
+            <p class="section-kicker">Updates</p>
+            <h2>News</h2>
+          </div>
+          <ol class="news-list">
+            {% for item in news %}
+            <li>
+              <time>{{ item.date }}</time>
+              <span>{{ item.text_html | safe }}</span>
+            </li>
+            {% endfor %}
+          </ol>
+        </section>
+
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <span>Last Updated: {{ last_updated }}</span>
+      <span>Built with Python, PyYAML, bibtexparser, and Jinja2.</span>
+    </footer>
+  </div>
+</body>
+
+</html>

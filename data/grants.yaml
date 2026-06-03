@@ -1,0 +1,60 @@
+- role: Lead/Sole CI
+  title: School of Computer and Mathematical Science Small Grant Round 2
+  funder: University of Adelaide
+  amount: 4k AUD
+  duration: 2024
+- role: 2nd CI
+  title: Optimized Hybrid MARL Techniques for Complex, Dynamic Environments
+  funder: DSTG
+  amount: 176k AUD
+  duration: 2024
+- role: 2nd CI
+  title: Warm Starts and Goal-based Heuristics to Improve MARL Performance in Advanced Distributed Defence
+  funder: Defence Innovation Partnership
+  amount: 150k AUD
+  duration: 2024
+- role: Lead/Sole CI
+  title: Model Malicious Drone Swarm Behaviours and Devise Counter Strategies
+  funder: Defence Trailblazer PhD Scholarship with SAAB
+  amount: approximately 138k AUD
+  duration: 2024
+- role: 2nd CI
+  title: "Socrates: Software Security with a Focus on Critical Technologies"
+  funder: Cybersecurity CRC
+  amount: 565k AUD
+  duration: 2023
+- role: Lead CI
+  title: Tackling the TTCP CAGE Challenge Using Monte-Carlo Planning for Large-Scale POMDPs
+  funder: DSTG
+  amount: 30k AUD
+  duration: 2022
+- role: Lead CI
+  title: Abstract Game Prototype for Cyber Attack/Defence
+  funder: DSTG
+  amount: 30k AUD
+  duration: 2022
+- role: 2nd CI
+  title: Machine Learning Techniques to Games on Graphs for Detection and Concealment of Spatially Defined Communication Networks
+  funder: DSTG
+  amount: 30k AUD
+  duration: 2022
+- role: 2nd CI
+  title: Tactics Development (Title Sanitised)
+  funder: DSTG
+  amount: 576k AUD
+  duration: 2022
+- role: Lead CI
+  title: Blockchain Enabled Platform for Software Vulnerability Cost Sharing
+  funder: Cybersecurity CRC
+  amount: 60k AUD
+  duration: 2019
+- role: 2nd CI
+  title: Unlocking Data for Automatic Detection of Insider Threats
+  funder: Cybersecurity CRC
+  amount: 30k AUD
+  duration: 2019
+- role: Lead/Sole CI
+  title: Automated Design of Revenue-Maximizing Ad Auction
+  funder: Microsoft Research Cambridge
+  amount: 69k GBP
+  duration: Oct 2012 - Sept 2015

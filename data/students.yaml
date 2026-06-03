@@ -1,0 +1,176 @@
+- name: Shiman Sheng
+  program: Ph.D.
+  role: Principal Supervisor
+  other_supervisors:
+    - Dr. Jiarui Gan, University of Oxford
+  entry_year: 2026
+  finish_year:
+  topic: Auction Models for Token Economics
+  note_html:
+- name: Felix Buecheler
+  program: Ph.D.
+  role: Principal Supervisor
+  other_supervisors:
+    - Dr. Jiarui Gan, University of Oxford
+  entry_year: 2025
+  finish_year:
+  topic: Advertisement auction frameworks for LLM chats
+  note_html:
+- name: Jialiang Li
+  program: Ph.D.
+  role: Principal Supervisor
+  other_supervisors:
+    - Dr. Weitong Chen
+  entry_year: 2025
+  finish_year:
+  topic: Machine Learning and Optimisation for Anatomical Pathology Workflow
+  note_html:
+- name: Benjamin Wruck
+  program: Ph.D.
+  role: Principal Supervisor
+  other_supervisors:
+    - Diksha Goel, CSIRO's Data61
+  entry_year: 2025
+  finish_year:
+  topic: Machine Learning-Assisted Optimisation of Benefits for Prosumers of EV V2G/V2H
+  note_html:
+- name: Grant Cameron Douglas
+  program: Ph.D.
+  role: Principal Supervisor
+  other_supervisors:
+    - Prof. Claudia Szabo
+    - Stephen Franklin, SAAB
+  entry_year: 2024
+  finish_year:
+  topic: Drone Swarm Behaviours and Counter-Strategies
+  note_html:
+- name: Quoc Dat Ngo
+  program: M.Phil.
+  role: Co-Supervisor
+  other_supervisors:
+    - Prof. Hung Nguyen
+  entry_year: 2025
+  finish_year:
+  topic: A Categorical Approach to Explainable Artificial Intelligence in Machine Learning
+  note_html:
+- name: Jinyang Li
+  program: Ph.D.
+  role: Co-Supervisor
+  other_supervisors:
+    - Prof. Hung Nguyen
+  entry_year: 2025
+  finish_year:
+  topic: LLM Guardrails for Malware
+  note_html:
+- name: Jeffrey Chan
+  program: M.Phil.
+  role: Co-Supervisor
+  other_supervisors:
+    - Prof. Claudia Szabo
+  entry_year: 2024
+  finish_year:
+  topic: Multi-Agent Reinforcement Learning for Counter-Unmanned Aerial Systems
+  note_html:
+- name: Liam Wigney
+  program: Ph.D.
+  role: Co-Supervisor
+  other_supervisors:
+    - Prof. Frank Neumann
+  entry_year: 2024
+  finish_year:
+  topic: Search Algorithms for Space and Energy
+  note_html:
+- name: Gamage Kokila Kasuni Perera
+  program: Ph.D.
+  role: Co-Supervisor
+  other_supervisors:
+    - Dr. Aneta Neumann
+    - Prof. Frank Neumann
+  entry_year: 2022
+  finish_year: 2026
+  topic: Evolutionary Computation with Chance Constraints
+  note_html:
+- name: Quang Huy Ngo
+  program: Ph.D.
+  role: Co-Supervisor
+  other_supervisors:
+    - Prof. Hung Nguyen
+  entry_year: 2022
+  finish_year: 2026
+  topic: Practical Graph Optimisation and AI-Driven Models for Active Directory Security Hardening
+  note_html: <strong>Dean's Commendation for Doctoral Thesis Excellence!</strong> Now a postdoctoral researcher at Adelaide University.
+- name: Jialiang Li
+  program: M.Phil.
+  role: Principal Supervisor
+  other_supervisors:
+    - Prof. Hung Nguyen
+  entry_year: 2021
+  finish_year: 2025
+  topic: Combinatorial Optimisation via Neural Networks
+  note_html: Continuing to a PhD
+- name: Xiankun Yan
+  program: Ph.D.
+  role: Co-Supervisor
+  other_supervisors:
+    - Prof. Frank Neumann
+    - Dr. Aneta Neumann
+  entry_year: 2022
+  finish_year: 2025
+  topic: Complexity with Chance Constraints
+  note_html:
+- name: Trong Nam Dinh
+  program: Ph.D.
+  role: Co-Supervisor
+  other_supervisors:
+    - Dr. Ali Pourmousavi Kani
+  entry_year: 2021
+  finish_year: 2025
+  topic: Stackelberg Game-Based Electricity Markets
+  note_html: <strong>Co-founder of OptiGrid</strong>
+- name: Faheem Ullah
+  program: Ph.D.
+  role: Co-Supervisor
+  other_supervisors:
+    - Prof. Ali Babar
+  entry_year: 2017
+  finish_year: 2020
+  topic: Cybersecurity Software Architecture
+  note_html: <strong>Now a continuing Level B Lecturer at the University of Adelaide.</strong>
+- name: Guanhua Wang
+  program: Ph.D.
+  role: Principal Supervisor
+  other_supervisors:
+    - A/Prof. Wei Emma Zhang
+  entry_year: 2019
+  finish_year: 2022
+  topic: Neural Network Mechanism Design
+  note_html: <strong>Dean's Commendation for Doctoral Thesis Excellence!</strong> Now co-founder at NestWeb.
+- name: Diksha Goel
+  program: Ph.D.
+  role: Principal Supervisor
+  other_supervisors:
+    - Prof. Hong Shen
+    - A/Prof. Hui Tian
+  entry_year: 2021
+  finish_year: 2023
+  topic: Graph Theory and Graph Neural Networks
+  note_html: <strong>Now a research scientist at CSIRO.</strong>
+- name: Viet Anh Do
+  program: Ph.D.
+  role: Co-Supervisor
+  other_supervisors:
+    - Prof. Frank Neumann
+    - Dr. Aneta Neumann
+  entry_year: 2020
+  finish_year: 2024
+  topic: Diversity in Evolutionary Optimisation
+  note_html: Now a postdoctoral researcher at the University of Adelaide.
+- name: Congbo Ma
+  program: Ph.D.
+  role: Co-Supervisor
+  other_supervisors:
+    - A/Prof. Wei Emma Zhang
+  entry_year: 2020
+  finish_year: 2024
+  topic: Multi-Document Summarization
+  note_html: Now a postdoctoral researcher at New York University Abu Dhabi.
