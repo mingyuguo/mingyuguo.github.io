@@ -70,7 +70,7 @@
   entry_year: 2024
   finish_year:
   topic: Multi-Agent Reinforcement Learning for Counter-Unmanned Aerial Systems
-  note_html:
+  note_html: <strong>Funded by Praetorian Aeronautics</strong>
 - name: Liam Wigney
   program: Ph.D.
   role: Co-Supervisor
@@ -126,7 +126,7 @@
   entry_year: 2021
   finish_year: 2025
   topic: Stackelberg Game-Based Electricity Markets
-  note_html: <strong>Co-founder of OptiGrid</strong>
+  note_html: <strong>Funded by Watt Energy</strong>; <strong>Co-founder of OptiGrid</strong>
 - name: Faheem Ullah
   program: Ph.D.
   role: Co-Supervisor
