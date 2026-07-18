@@ -50,7 +50,7 @@ def volume_number_pages(entry: dict[str, str]) -> str:
     fields = [
         ("Volume", bib_text(entry.get("volume"))),
         ("Number", bib_text(entry.get("number"))),
-        ("Pages", bib_text(entry.get("pages"))),
+        ("Pages", bib_text(entry.get("pages")).replace("--", "–")),
     ]
     if any(value == "To appear" for _, value in fields):
         return "To appear"

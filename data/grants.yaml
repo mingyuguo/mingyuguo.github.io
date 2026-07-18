@@ -1,65 +1,65 @@
 - role: Lead CI / Principal Supervisor
   title: AI for Optimal Land Subdivision and Planning Policy Navigation
   funder: National Industry PhD Program with DDDI Group
-  amount: approximately 133k AUD
+  amount: approximately AUD 133k
   duration: 2026
 - role: Lead CI / Principal Supervisor
   title: Machine Learning and Optimisation for Anatomical Pathology Workflow
   funder: Industry PhD Scholarship with SA Pathology
-  amount: approximately 186k AUD
+  amount: approximately AUD 186k
   duration: 2025
 - role: 2nd CI
   title: Optimized Hybrid MARL Techniques for Complex, Dynamic Environments
   funder: DSTG
-  amount: 176k AUD
+  amount: AUD 176k
   duration: 2024
 - role: 2nd CI
   title: Warm Starts and Goal-based Heuristics to Improve MARL Performance in Advanced Distributed Defence
   funder: Defence Innovation Partnership
-  amount: 150k AUD
+  amount: AUD 150k
   duration: 2024
 - role: Lead/Sole CI
   title: Model Malicious Drone Swarm Behaviours and Devise Counter Strategies
   funder: Defence Trailblazer PhD Scholarship with Saab Australia
-  amount: approximately 138k AUD
+  amount: approximately AUD 138k
   duration: 2024
 - role: 2nd CI
   title: "Socrates: Software Security with a Focus on Critical Technologies"
   funder: Cybersecurity CRC
-  amount: 565k AUD
+  amount: AUD 565k
   duration: 2023
 - role: Lead CI
   title: Tackling the TTCP CAGE Challenge Using Monte-Carlo Planning for Large-Scale POMDPs
   funder: DSTG
-  amount: 30k AUD
+  amount: AUD 30k
   duration: 2022
 - role: Lead CI
   title: Abstract Game Prototype for Cyber Attack/Defence
   funder: DSTG
-  amount: 30k AUD
+  amount: AUD 30k
   duration: 2022
 - role: 2nd CI
   title: Machine Learning Techniques to Games on Graphs for Detection and Concealment of Spatially Defined Communication Networks
   funder: DSTG
-  amount: 30k AUD
+  amount: AUD 30k
   duration: 2022
 - role: 2nd CI
   title: Tactics Development (Title Sanitised)
   funder: DSTG
-  amount: 576k AUD
+  amount: AUD 576k
   duration: 2022
 - role: Lead CI
   title: Blockchain Enabled Platform for Software Vulnerability Cost Sharing
   funder: Cybersecurity CRC
-  amount: 60k AUD
+  amount: AUD 60k
   duration: 2019
 - role: 2nd CI
   title: Unlocking Data for Automatic Detection of Insider Threats
   funder: Cybersecurity CRC
-  amount: 30k AUD
+  amount: AUD 30k
   duration: 2019
 - role: Lead/Sole CI
   title: Automated Design of Revenue-Maximizing Ad Auction
   funder: Microsoft Research Cambridge
-  amount: 69k GBP
+  amount: GBP 69k
   duration: Oct 2012 - Sept 2015
