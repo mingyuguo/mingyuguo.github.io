@@ -7,7 +7,7 @@
   finish_year:
   topic: Auction Models for Token Economics
   note_html:
-- name: Felix Buecheler
+- name: Felix Lysander Buecheler
   program: Ph.D.
   role: Principal Supervisor
   other_supervisors:
@@ -24,7 +24,7 @@
   entry_year: 2025
   finish_year:
   topic: Machine Learning and Optimisation for Anatomical Pathology Workflow
-  note_html:
+  note_html: <strong>Industry PhD with SA Pathology</strong>
 - name: Benjamin Wruck
   program: Ph.D.
   role: Principal Supervisor
@@ -32,14 +32,14 @@
     - Diksha Goel, CSIRO's Data61
   entry_year: 2025
   finish_year:
-  topic: Machine Learning-Assisted Optimisation of Benefits for Prosumers of EV V2G/V2H
+  topic: LLM-Assisted EV V2G/V2H Optimisation
   note_html:
 - name: Grant Cameron Douglas
   program: Ph.D.
   role: Principal Supervisor
   other_supervisors:
     - Prof. Claudia Szabo
-    - Stephen Franklin, SAAB
+    - Stephen Franklin, Saab Australia
   entry_year: 2024
   finish_year:
   topic: Drone Swarm Behaviours and Counter-Strategies
