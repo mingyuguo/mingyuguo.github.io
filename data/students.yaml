@@ -5,7 +5,7 @@
     - A/Prof. Devika Kannan, School of Management, Adelaide University
   entry_year: 2026
   finish_year:
-  topic: Procurement of AI services
+  topic: Economic Models for AI Service Procurement
   note_html:
 - name: Zhuyi Peng
   program: M.Phil.
@@ -14,7 +14,7 @@
     - A/Prof. Hau Chan, University of Nebraska
   entry_year: 2026
   finish_year:
-  topic: Game theory and optimisation for agentic commerce challenges
+  topic: Game Theory and Optimisation for Commerce with AI Agents
   note_html:
 - name: Shiman Sheng
   program: Ph.D.
@@ -23,7 +23,7 @@
     - Dr. Jiarui Gan, University of Oxford
   entry_year: 2026
   finish_year:
-  topic: Auction Models for Token Economics
+  topic: Auction Design for AI Token Markets
   note_html:
 - name: Felix Lysander Buecheler
   program: Ph.D.
@@ -32,7 +32,7 @@
     - Dr. Jiarui Gan, University of Oxford
   entry_year: 2025
   finish_year:
-  topic: Consumer behavior study of AI agents
+  topic: Consumer Behaviour in AI-Mediated Commerce
   note_html:
 - name: Jialiang Li
   program: Ph.D.
@@ -78,7 +78,7 @@
     - Prof. Hung Nguyen
   entry_year: 2025
   finish_year:
-  topic: LLM Guardrails for Malware
+  topic: Safety Guardrails for Large Language Models in Cybersecurity
   note_html:
 - name: Jeffrey Chan
   program: M.Phil.
