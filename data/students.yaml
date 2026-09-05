@@ -1,3 +1,21 @@
+- name: Huy Trung Truong
+  program: Ph.D.
+  role: Principal Supervisor
+  other_supervisors:
+    - A/Prof. Devika Kannan, School of Management, Adelaide University
+  entry_year: 2026
+  finish_year:
+  topic: Procurement of AI services
+  note_html:
+- name: Zhuyi Peng
+  program: M.Phil.
+  role: Principal Supervisor
+  other_supervisors:
+    - A/Prof. Hau Chan, University of Nebraska
+  entry_year: 2026
+  finish_year:
+  topic: Game theory and optimisation for agentic commerce challenges
+  note_html:
 - name: Shiman Sheng
   program: Ph.D.
   role: Principal Supervisor
@@ -14,7 +32,7 @@
     - Dr. Jiarui Gan, University of Oxford
   entry_year: 2025
   finish_year:
-  topic: Advertisement auction frameworks for LLM chats
+  topic: Consumer behavior study of AI agents
   note_html:
 - name: Jialiang Li
   program: Ph.D.
