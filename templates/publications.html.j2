@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Publications | Mingyu Guo</title>
+  <meta name="description" content="The complete publication list of Mingyu Guo, including work on AI, algorithmic game theory and optimisation.">
+  <link rel="icon" href="static/favicon.ico" sizes="any">
+  <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="static/apple-touch-icon.png">
+  <link rel="stylesheet" href="static/site.css">
+</head>
+
+<body>
+  <div class="site-shell publication-page">
+    <header class="publication-page-header">
+      <p class="eyebrow">Mingyu Guo</p>
+      <h1>All Publications</h1>
+      <nav class="profile-links" aria-label="Publication navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#publications">Selected publications</a>
+      </nav>
+    </header>
+
+    <main class="section" aria-label="Complete publication list">
+      {% include "_publication_list.html.j2" %}
+    </main>
+
+    <footer class="site-footer">
+      <span>Last Updated: {{ last_updated }}</span>
+      <a href="index.html#publications">Back to selected publications</a>
+    </footer>
+  </div>
+</body>
+
+</html>

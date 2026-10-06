@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mingyu Guo | Multi-Agent AI and Agentic Commerce</title>
-  <meta name="description" content="Mingyu Guo develops multi-agent AI and agentic commerce systems using algorithmic game theory and optimisation, with applications in cybersecurity, autonomous systems, energy, and resource allocation.">
+  <title>Mingyu Guo | AI for Commerce and Defence</title>
+  <meta name="description" content="Mingyu Guo researches agentic commerce, the economics of generative AI, and AI for drone and cyber defence, using algorithmic game theory and optimisation.">
   <link rel="icon" href="static/favicon.ico" sizes="any">
   <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="static/apple-touch-icon.png">
@@ -21,7 +21,7 @@
       <div class="profile-copy">
         <p class="eyebrow">Senior Lecturer · Adelaide University</p>
         <h1>Mingyu Guo</h1>
-        <p class="lead">Strategic decision-making for multi-agent AI and agentic commerce.</p>
+        <p class="lead">AI for commerce and defence, grounded in game theory and optimisation.</p>
         <div class="contact-list" aria-label="Contact information">
           <span>mingyu.guo at adelaide dot edu dot au</span>
           <span>4.19 Ingkarni Wardli Building</span>
@@ -55,27 +55,21 @@
           </div>
           <div class="prose">
             <p>I am a <strong>Senior Lecturer</strong>, <strong>Program Director of the Master of Computer Science</strong>, and <strong>Graduate Research Coordinator</strong> in the School of Computer Science and Information Technology, <em>Adelaide University</em>.</p>
-            <p>My research develops <strong>intelligent systems</strong> for strategic decision-making in complex multi-agent environments. I combine <strong>multi-agent AI</strong>, <strong>algorithmic game theory</strong>, and <strong>optimisation</strong>, with applications in cybersecurity, autonomous systems, energy, and resource allocation.</p>
-            <p>My current focus is <strong>agentic AI</strong> and <strong>agentic commerce</strong>: how AI agents collaborate, compete, and transact reliably. This includes LLM-agent workflows, model and resource routing, generative advertising, and LLM-assisted algorithm design. I work with academic and industry partners to turn these ideas into robust, scalable decision systems.</p>
+            <p>I use <strong>algorithmic game theory</strong> and <strong>optimisation</strong> to study how AI systems make decisions when participants have competing interests. My research spans two themes:</p>
+            <p><strong>Agentic Commerce and the Economics of Generative AI.</strong> I study how AI agents buy, sell and negotiate on behalf of people and organisations. Current work includes advertising in language-model responses, the procurement and pricing of AI services, and auction design for AI tokens.</p>
+            <p><strong>AI for Drone and Cyber Defence.</strong> I develop algorithms for coordinating drone teams and protecting enterprise networks against cyber attacks. This work addresses how to choose effective strategies at scale while accounting for an adversary's responses, with support from defence and industry partners.</p>
             <p>Before joining Adelaide, I was a Lecturer at the <em>University of Liverpool</em>. I hold a Ph.D. in Computer Science from <em>Duke University</em>, where my dissertation was runner-up for the <em>Victor Lesser Distinguished Dissertation Award</em>. I also hold an M.S. in Applied Mathematics from the <em>University of Florida</em> and a B.S. in Mathematics from <em>Zhejiang University</em>.</p>
           </div>
-          <div class="stat-grid" aria-label="Profile highlights">
-            <div class="stat">
-              <span class="stat-value">90+</span>
-              <span class="stat-label">Research publications</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">50+</span>
-              <span class="stat-label">CORE A*/A publications</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">A$1.5M+</span>
-              <span class="stat-label">Funded project value</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">10</span>
-              <span class="stat-label">HDR completions</span>
-            </div>
+          <div class="profile-highlights">
+            <h3>Highlights</h3>
+            <ul class="highlight-list" role="list">
+              {% for highlight in highlights %}
+              <li>
+                <strong class="highlight-title">{{ highlight.title }}</strong>
+                <span class="highlight-detail">{% if highlight.detail_html %}{{ highlight.detail_html | safe }}{% else %}{{ highlight.detail }}{% endif %}</span>
+              </li>
+              {% endfor %}
+            </ul>
           </div>
         </section>
 
@@ -88,6 +82,15 @@
             <p>I collaborate with industry and government on decision problems that combine AI, optimisation, and strategic interaction. Current and recent partnerships span defence and autonomous systems with <strong>Saab Australia</strong> and the <strong>Defence Science and Technology Group</strong>, cybersecurity with the <strong>Cyber Security Cooperative Research Centre</strong>, health operations with <strong>SA Pathology</strong>, and PropTech with <strong>DDDI Group</strong>.</p>
             <p>I welcome conversations about collaborative research, industry PhDs, grant partnerships, and translating algorithms into decision-support tools and prototypes. <a href="mailto:mingyu.guo@adelaide.edu.au">Contact me to discuss a potential collaboration.</a></p>
           </div>
+        </section>
+
+        <section id="publications" class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Research Output</p>
+            <h2>Selected Publications</h2>
+            <a href="publications.html">View all publications</a>
+          </div>
+          {% include "_publication_list.html.j2" %}
         </section>
 
         <section class="section mobile-news">
@@ -128,29 +131,6 @@
             <p>Current Adelaide University students are welcome to contact me about Honours and research projects. A project may target a research publication, an industry-facing prototype, or both. Recent student work has involved researchers at CMU, Oxford, and Harvard, as well as industry partners.</p>
             <p>Topics can be shaped around research questions, practical applications, startup ideas, or applied systems.</p>
           </div>
-        </section>
-
-        <section id="publications" class="section">
-          <div class="section-heading">
-            <p class="section-kicker">Research Output</p>
-            <h2>Publications</h2>
-          </div>
-          <ol class="publication-list">
-            {% for publication in publications %}
-            <li class="publication-item">
-              <div class="publication-main">
-                <p class="publication-title">
-                  {% if publication.link %}<a href="{{ publication.link }}">{% endif %}{{ publication.title }}{% if publication.link %}</a>{% endif %}
-                </p>
-                <p class="publication-authors">{{ publication.authors_html | safe }}</p>
-                <p class="publication-meta"><em>{{ publication.venue }}</em>{% if publication.volume_number_pages %}, {{ publication.volume_number_pages }}{% endif %}, {{ publication.year }}.</p>
-              </div>
-              {% if publication.ranking %}
-              <span class="tag">{{ publication.ranking }}</span>
-              {% endif %}
-            </li>
-            {% endfor %}
-          </ol>
         </section>
 
         <section id="students" class="section">
@@ -254,7 +234,7 @@
 
     <footer class="site-footer">
       <span>Last Updated: {{ last_updated }}</span>
-      <span>Multi-agent AI · Agentic commerce · Optimisation</span>
+      <span>Agentic commerce | Drone and cyber defence | Game theory and optimisation</span>
     </footer>
   </div>
 </body>

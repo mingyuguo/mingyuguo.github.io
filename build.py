@@ -46,31 +46,30 @@ def highlight_author(author: str) -> str:
     return escaped
 
 
-def volume_number_pages(entry: dict[str, str]) -> str:
-    fields = [
-        ("Volume", bib_text(entry.get("volume"))),
-        ("Number", bib_text(entry.get("number"))),
-        ("Pages", bib_text(entry.get("pages")).replace("--", "–")),
-    ]
-    if any(value == "To appear" for _, value in fields):
-        return "To appear"
-    return ", ".join(f"{label} {value}" for label, value in fields if value)
-
-
-def load_publications() -> list[dict[str, str]]:
+def load_publications() -> list[dict[str, str | bool]]:
     with (DATA_DIR / "mingyu_publications.bib").open(encoding="utf-8") as handle:
         database = bibtexparser.load(handle)
 
     publications = []
     for entry in database.entries:
+        selected = bib_text(entry.get("selected", "false")).lower()
+        if selected not in {"true", "false"}:
+            raise ValueError(f"{entry['ID']}: selected must be true or false")
         authors = split_authors(entry.get("author", ""))
+        venue = bib_text(entry.get("journal") or entry.get("booktitle") or entry.get("school"))
+        notes = [part.strip() for part in bib_text(entry.get("note")).split(",") if part.strip()]
+        ranking = next((part for part in notes if part.startswith(("CORE ", "CCF-", "ERA-", "ABDC "))), "")
         publications.append({
+            "selected": selected == "true",
             "authors_html": ", ".join(highlight_author(author) for author in authors),
             "title": bib_text(entry.get("title")),
-            "venue": bib_text(entry.get("journal") or entry.get("booktitle")),
-            "volume_number_pages": volume_number_pages(entry),
+            "venue": venue,
+            "venue_short": bib_text(entry.get("venue_short")) or venue,
             "year": bib_text(entry.get("year")),
-            "ranking": bib_text(entry.get("note")),
+            "ranking": ranking,
+            "notes": ", ".join(part for part in notes if part != ranking),
+            "clarification": bib_text(entry.get("clarification")),
+            "summary": bib_text(entry.get("summary")),
             "link": bib_text(entry.get("url")),
         })
     return publications
@@ -84,22 +83,30 @@ def render_site() -> None:
         trim_blocks=True,
         lstrip_blocks=True,
     )
-    template = env.get_template("index.html.j2")
-    html_text = template.render(
+    publications = load_publications()
+    last_updated = format_datetime(datetime.now().astimezone())
+    html_text = env.get_template("index.html.j2").render(
+        highlights=load_yaml("highlights"),
         news=load_yaml("news"),
         students=load_yaml("students"),
         presentations=load_yaml("presentations"),
         services=load_yaml("services"),
         grants=load_yaml("grants"),
-        publications=load_publications(),
-        last_updated=format_datetime(datetime.now().astimezone()),
+        publications=[paper for paper in publications if paper["selected"]],
+        last_updated=last_updated,
     )
     (GENERATED_DIR / "index.html").write_text(html_text, encoding="utf-8")
+    publications_html = env.get_template("publications.html.j2").render(
+        publications=publications,
+        last_updated=last_updated,
+    )
+    (GENERATED_DIR / "publications.html").write_text(publications_html, encoding="utf-8")
 
 
 def main() -> None:
     render_site()
     print(f"Generated {GENERATED_DIR / 'index.html'}")
+    print(f"Generated {GENERATED_DIR / 'publications.html'}")
 
 
 if __name__ == "__main__":

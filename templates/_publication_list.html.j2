@@ -1,0 +1,19 @@
+<ol class="publication-list">
+  {% for publication in publications %}
+  <li class="publication-item">
+    <div class="publication-main">
+      <div class="publication-heading">
+        <span class="publication-venue">{{ publication.venue_short }} {{ publication.year }}</span>
+        {% if publication.ranking %}<span class="tag">{{ publication.ranking }}</span>{% endif %}
+        {% if publication.notes %}<span class="publication-note">{{ publication.notes }}</span>{% endif %}
+      </div>
+      <p class="publication-title">
+        {% if publication.link %}<a href="{{ publication.link }}">{% endif %}{{ publication.title }}{% if publication.link %}</a>{% endif %}
+      </p>
+      <p class="publication-authors">{{ publication.authors_html | safe }}</p>
+      {% if publication.clarification %}<p class="publication-clarification">{{ publication.clarification }}</p>{% endif %}
+      {% if publication.summary %}<p class="publication-summary">{{ publication.summary }}</p>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>
