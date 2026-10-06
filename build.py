@@ -5,6 +5,7 @@ import html
 import re
 from datetime import datetime
 from email.utils import format_datetime
+from hashlib import sha256
 from pathlib import Path
 from typing import Any
 
@@ -84,6 +85,7 @@ def render_site() -> None:
         lstrip_blocks=True,
     )
     publications = load_publications()
+    stylesheet_version = sha256((ROOT / "static" / "site.css").read_bytes()).hexdigest()[:12]
     last_updated = format_datetime(datetime.now().astimezone())
     html_text = env.get_template("index.html.j2").render(
         highlights=load_yaml("highlights"),
@@ -93,11 +95,13 @@ def render_site() -> None:
         services=load_yaml("services"),
         grants=load_yaml("grants"),
         publications=[paper for paper in publications if paper["selected"]],
+        stylesheet_version=stylesheet_version,
         last_updated=last_updated,
     )
     (GENERATED_DIR / "index.html").write_text(html_text, encoding="utf-8")
     publications_html = env.get_template("publications.html.j2").render(
         publications=publications,
+        stylesheet_version=stylesheet_version,
         last_updated=last_updated,
     )
     (GENERATED_DIR / "publications.html").write_text(publications_html, encoding="utf-8")
