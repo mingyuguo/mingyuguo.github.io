@@ -1,3 +1,12 @@
+- name: Yixin Chen
+  program: Ph.D.
+  role: Principal Supervisor
+  other_supervisors:
+    - Prof. Ali Babar
+  entry_year: 2026
+  finish_year:
+  topic: Trustworthy Agentic Commerce
+  note_html:
 - name: Huy Trung Truong
   program: Ph.D.
   role: Principal Supervisor
